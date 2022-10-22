@@ -14,8 +14,11 @@ public class ins_sort {
         }
     }
     public static void print(int [] lst) {
+        String res = "";
         for (int i : lst) {
+            res= res + i + ", ";
             System.out.print(i + ", ");
         }
+        file_out.save(res);
     }
 }
